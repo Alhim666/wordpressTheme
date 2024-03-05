@@ -1,0 +1,194 @@
+.card-page {
+    width: 17em;
+    height: 26.5em;
+    background: #1a1a1a;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s;
+    position: relative;
+}
+
+.card-page1 {
+    width: 17em;
+    height: 26.5em;
+    background-image: linear-gradient(163deg, #3700ff 0%, #00ff75 100%);
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all .2s;
+}
+
+.card-page:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card-page:hover .img {
+    transform: scale(1.10);
+}
+
+.card-page:hover .title-card {
+    color: #7f39fb;
+}
+
+.card-page .title-card {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+}
+
+.card-page .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.80em;
+    margin: 1em;
+}
+
+.card-page .img {
+    width: 8.5em;
+    background: white;
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all .2s;
+}
+
+.card-page .tags {
+    margin-top: auto;
+    text-align: center;
+    overflow: hidden;
+    /* Приховує зайвий контент за межами контейнера */
+    white-space: nowrap;
+    /* Забороняє переносити текст на інші рядки */
+    text-overflow: ellipsis;
+    /* Відображає знаки "..." для великого тексту */
+}
+
+.tags a {
+    text-decoration: none;
+    color: #7f39fb;
+}
+
+.tags a:hover {
+    text-decoration: underline;
+    color: #985eff;
+}
+
+.title-card {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.date {
+    margin-top: -20px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.page-numbers {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #7f39fb;
+    /* Фіолетовий колір */
+    background: linear-gradient(90deg, #7f39fb, #4d2494);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.page-numbers.current {
+    background: linear-gradient(90deg, #75bec0, #ffffff, #87d7da);
+    color: #7f39fb;
+}
+
+.page-numbers:hover {
+
+    transform: scale(1.12);
+    background: linear-gradient(90deg, #4d2494, #7f39fb);
+    /* Змінений відтінок фіолетового для наведення */
+    border: 2px solid #3d0f8b;
+    box-shadow: 0 0 10px rgba(127, 57, 251, 0.7);
+    color: white;
+    /* Тінь для ефекту свічіння */
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-container {
+    text-align: center;
+    /* Center the image horizontally */
+}
+
+.results-cont {
+    margin-top: -15px;
+    text-align: center;
+}
+
+.results {
+    text-decoration: underline;
+}
+
+
+.srch-div {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchform {
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.searchform input {
+    width: 90%;
+    border: 3px solid #fff;
+    background: transparent;
+    padding: 15px 30px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#searchsubmit {
+    display: none;
+}
+
+.search-title {
+    text-align: center;
+    margin: 0px;
+}

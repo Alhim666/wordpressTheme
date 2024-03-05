@@ -1,0 +1,286 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Vollkorn', serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+p {
+    font-size: 17px;
+}
+
+/* Стилі для заголовка (header) */
+header {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 10px 0;
+}
+
+span {
+    color: #7f39fb;
+}
+
+/* Стилі для навігаційної панелі (navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+/* Загальні стилі для посилань */
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Змінні стилі для малих екранів (наприклад, менше 768px) */
+@media screen and (max-width: 768px) {
+    .logo a {
+        font-size: 18px;
+        /* Зменшений розмір шрифту для малих екранів */
+    }
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+/* Загальні стилі для посилань у меню */
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Змінні стилі для малих екранів (наприклад, менше 768px) */
+@media screen and (max-width: 768px) {
+    .nav li {
+        margin-right: 12px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: #7f39fb;
+}
+
+.logo a:hover {
+    color: #7f39fb;
+}
+
+.page-title {
+    text-align: center;
+}
+
+/* Стилі для слайдера */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.slider {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 90%;
+    height: 45vh;
+    max-height: 400px;
+    overflow: hidden;
+    /* Додайте цей стиль для обрізання зображень, якщо вони занадто великі */
+}
+
+.slider-item {
+    transition: transform 0.5s ease-in-out;
+    /* Додайте анімацію для transform */
+}
+
+@media (max-height: 1010px) {
+    .slider {
+        height: 50vh;
+    }
+}
+
+.slider .slider-item {
+    width: 100%;
+    flex: 0 0 100%;
+    /* Додайте цей стиль для правильного розміщення слайдів */
+}
+
+.slider-item img {
+    width: 100%;
+    max-height: 290px;
+    object-fit: cover;
+}
+
+.slider-header {
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+
+.slider-text {
+    margin-top: 3px;
+    text-align: center;
+}
+
+.slider-text span {
+    color: #985eff;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.tilt-effect img {
+    transition: transform 0.3s ease;
+}
+
+.tilt-effect.active img {
+    transform-origin: center;
+    transform: scale(1.02) rotate(0deg);
+}
+
+.current_page_item a {
+    color: #7f39fb;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Дозволяє переносити блоки на новий рядок */
+}
+
+.left {
+    flex: 1;
+    max-width: 30%;
+    padding: 20px;
+}
+
+.right {
+    flex: 2;
+    max-width: 70%;
+    margin: 15px;
+    background-color: #151515;
+    box-shadow: 5px 5px 15px 5px #000000;
+    padding: 20px;
+
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        /* Зміна на вертикальний режим для екранів < 1200px */
+    }
+
+    .left,
+    .right {
+        max-width: 100%;
+    }
+
+    .desc-box {
+        font-size: 14px;
+    }
+}
+
+
+.hr-dashed-gradient {
+    margin: 20px 0;
+    padding: 0;
+    height: 2px;
+    border: none;
+    background: linear-gradient(to right, transparent 50%, #151515 50%),
+        linear-gradient(to right, #7f39fb, #9773d4);
+    background-size: 16px 2px, 100% 2px;
+    animation: moveGradient 150s linear infinite;
+}
+
+@keyframes moveGradient {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.slider a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.forcard-container {
+    position: relative;
+    /* Додано для позиціонування відносно контейнера */
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.card-text {
+    position: relative;
+    /* Додано для позиціонування відносно контейнера */
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.animate {
+    animation: slideLeft 5s linear infinite;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(10%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+#scrollToTopButton {
+    background-color: #1a1a1a; /* Додаємо фоновий колір */
+    border-radius: 5px;
+    border: 1px solid #9773d4;
+    display: none; /* Початково приховуємо кнопку */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+    max-width: 50px;
+    max-height: 50px;
+}

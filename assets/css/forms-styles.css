@@ -1,0 +1,89 @@
+.form-container {
+    padding: 20px;
+}
+
+.um-field-label label {
+    font-size: 20px;
+    color: #9fc4d0;
+}
+
+.um-link-alt {
+    display: none !important;
+}
+
+.um-left input {
+    background-color: #9fc4d0 !important;
+    color: black !important;
+}
+.um-right a{
+    background-color: #9fc4d0 !important;
+    color: black !important;
+}
+
+.um-right a:hover{
+    background-color: #e58df1 !important;
+}
+
+.um-left input:hover{
+    background-color: #e58df1 !important;
+}
+
+.um-field-area {
+    z-index: 80;
+    font-size: 1.1rem;
+    background-color: transparent;
+    width: 100%;
+}
+
+.um-form-field {
+    color: #fff !important;
+    font-size: 0.9rem !important;
+    background-color: transparent !important;
+    width: 100% !important;
+    transition: all 1s ease-in-out !important;
+}
+
+.um-form-field:hover {
+    transition: all 1s ease-in-out !important;
+    background: linear-gradient(90deg, transparent 0%, rgba(102, 224, 255, 0.2) 27%, rgba(102, 224, 255, 0.2) 63%, transparent 100%) !important;
+}
+
+.um-form-field:focus {
+    color: hsl(192, 100%, 88%) !important;
+    background: linear-gradient(90deg, transparent 0%, rgba(102, 224, 255, 0.2) 27%, rgba(102, 224, 255, 0.2) 63%, transparent 100%) !important;
+}
+
+.um-form-field::-moz-placeholder {
+    color: hsla(192, 100%, 88%, 0.806) !important;
+}
+
+strong {
+    color: #5eecff;
+}
+
+.um-misc-with-img a img {
+    width: 60%;
+}
+
+.um-misc-ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.um-misc-ul li {
+    margin-bottom: 10px;
+}
+
+.um-misc-ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #5eecff 0%, rgba(102, 224, 255, 0.2) 27%, rgba(102, 224, 255, 0.2) 63%, #5eecff 100%) !important;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.um-misc-ul li a:hover {
+    background: linear-gradient(90deg, #5eecff 0%, #6e22f1 27%, #6e22f1 63%, #5eecff 100%) !important;
+}

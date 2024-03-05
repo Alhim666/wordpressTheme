@@ -1,0 +1,139 @@
+.comments-single {
+    margin-top: 40px;
+    padding: 30px;
+    padding-bottom: 0px;
+    background-color: #121212;
+    box-shadow: 0px -15px 10px 5px #000000;
+}
+
+.commentlist {
+    list-style: none;
+    padding: 0;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+.comment-body {
+    border: 2px solid #23036a;
+    box-shadow: 0px 0px 10px 0.5px #23036a;
+    transition: all 2.1s;
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+
+.comment-body:hover {
+    max-width: 100%;
+    border: 2px solid #7f39fb;
+    box-shadow: 0px 0px 20px 1px #7f39fb;
+}
+
+.comment-author img.avatar {
+    border-radius: 50%;
+}
+
+.comment-meta {
+    font-size: 12px;
+    color: #888;
+}
+
+.comment-reply-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Style for reply form */
+.comment-respond {
+    margin-top: 20px;
+}
+
+.comment-reply-title {
+    font-size: 18px;
+}
+
+.comment-form {
+    background-color: #1f1f1f;
+    padding: 20px;
+}
+
+.comment-form p {
+    margin: 10px 0;
+}
+
+.comment-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.comment-form textarea {
+    width: 98%;
+    padding: 10px;
+    border: 2px solid #170b2e;
+    box-shadow: 0px 0px 10px 0.5px #23036a;
+    transition: all 2.1s;
+    border-radius: 5px;
+    resize: vertical;
+    resize: none;
+}
+
+.comment-form input.submit {
+    background-image: linear-gradient(90deg, #1c0352, #23036a, #3b1c72, #5d3a9b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.comment-form input.submit:hover {
+    transform: scale(1.02);
+    background-image: linear-gradient(90deg, #1c0352, #23036a, #662ec9, #5d3a9b);
+    border: 2px solid #170b2e;
+    box-shadow: 0px 0px 10px 0.5px #23036a;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .comment-body {
+        padding: 5px;
+    }
+
+    .comment-form textarea {
+        padding: 5px;
+    }
+}
+
+.fn a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-style: normal;
+}
+
+.commentmetadata a,
+.comment-form a {
+    color: #7f39fb;
+    text-decoration: none;
+}
+
+.commentmetadata a:hover,
+.comment-form a:hover {
+    color: #985eff;
+    text-decoration: underline;
+}
+
+.comment-edit-link {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.comment-reply-link {
+    display: none !important;
+}
+
+.comment-form-comment textarea{
+    font-family: 'Vollkorn', serif;
+    font-size: 17px;
+}

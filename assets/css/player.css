@@ -1,0 +1,218 @@
+.player-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  /* Дозволяє переносити блоки на новий рядок */
+}
+
+.player-left {
+  padding-right: 10px;
+  flex: 1;
+  max-width: 30%;
+}
+
+.player-right {
+  flex: 2;
+  max-width: 70%;
+}
+
+.movie {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+@media (max-width: 1500px) {
+  .movie {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .player-container {
+    flex-direction: column;
+  }
+
+  .player-left,
+  .player-right {
+    max-width: 100%;
+  }
+
+  .movie {
+    width: 95%;
+  }
+}
+
+.player-container-main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe {
+  max-width: 100%;
+  border: 2px solid #23036a;
+  box-shadow: 0px 0px 30px 1px #23036a;
+  transition: all .3s;
+}
+
+iframe:hover {
+  border: 2px solid #7f39fb;
+  box-shadow: 0px 0px 30px 2px #7f39fb;
+}
+
+.custom-nav {
+  margin: auto;
+  margin-top: 40px;
+  position: relative;
+  width: clamp(300px, 45vw, 100%);
+}
+
+.custom-nav h2 {
+  font-size: 20px;
+  border-radius: 2px;
+  position: relative;
+  background-image: linear-gradient(90deg, #170936, #23036a, #583792, #372653);
+  height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: inherit;
+  font-weight: 200;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.35);
+  transition: all 0.4s;
+}
+
+.custom-nav:hover h2 {
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.35);
+  background-image: linear-gradient(90deg, #170936, #23036a, #583792, #372653);
+  box-shadow: 0 1px 4px #7f39fb, -23px 0 20px -23px #7f39fb, 23px 0 20px -23px #7f39fb, 0 0 40px #7f39fb inset;
+  transition: all 0.4s;
+}
+
+#custom-toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  height: 40px;
+}
+
+h2::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: inherit;
+  aspect-ratio: 1;
+  background: currentColor;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  content: "";
+  clip-path: polygon(50% 25%, 20% 80%, 80% 80%);
+  transform: rotate(180deg) scale(0.75);
+}
+
+#custom-toggle:not(:checked)~h2::before {
+  transform: rotate(0deg) scale(0.75);
+}
+
+#custom-toggle:focus~h2 {
+  background-image: linear-gradient(180deg, #170936, #23036a, #583792, #372653);
+  transition: background 0.45s;
+}
+
+#custom-toggle:checked~ul {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#custom-toggle:not(:checked)~ul {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.custom-nav ul {
+  padding-left: 0;
+  padding-top: 1rem;
+  margin-top: 0;
+  background: transparent;
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  text-align: center;
+  transition: all 0.4s ease-out;
+  width: 100%;
+  position: absolute;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.custom-nav ul li {
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  line-height: 1.5;
+  width: 100%;
+  margin: 0 0 0.25rem 0;
+  background-image: linear-gradient(90deg, #0a0020, #23036a, #7f39fb, #985eff);
+  transition: background 3s;
+  box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.35);
+}
+
+.custom-nav ul li:hover,
+.custom-nav ul li a:focus {
+  background: #985eff;
+  transition: background 0.45s;
+}
+
+.custom-nav ul a {
+  display: block;
+  cursor: pointer;
+  text-transform: lowercase;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.custom-container {
+  max-width: 55ch;
+  margin: auto;
+  color: #36454F;
+}
+
+/* .inv {
+  display: none;
+} */
+
+#chapter-list li {
+  cursor: pointer;
+}
+
+.nf {
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  padding-top: 3px;
+  background-color: #151515;
+  box-shadow: 5px 5px 15px 5px #000000;
+  text-align: center;
+  color: white;
+  text-shadow: -3px -3px 0px #3d0f8b, 3px 3px 0px #E94BE8;
+  width: 60%;
+}
+
+
+.nf-img{
+  width: 100%;
+  box-shadow: 0px 0px 20px 1px #7f39fb;
+}
